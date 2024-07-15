@@ -2,7 +2,7 @@
 
 This repository contains the final project for our web development course at PUP (Polytechnic University of the Philippines). The project is a web application designed to manage medical health forms for PUP.
 
-You can visit the deployed website [here](https://shrimpeu.github.io/PUP-Medical-Health-Form-Website/).
+You can visit the published website [here](https://shrimpeu.github.io/PUP-Medical-Health-Form-Website/).
 
 ## Team Members
 
