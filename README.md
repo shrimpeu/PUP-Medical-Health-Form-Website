@@ -16,13 +16,13 @@ You can visit the published website [here](https://shrimpeu.github.io/PUP-Medica
 You can access the project database [here](https://docs.google.com/spreadsheets/d/1S2U9CudRQxnTPCndodf_O0Ep4CXSgNCLd-7sQ5LjjtM/edit?usp=sharing).
 
 ## Table of Contents
-- [Overview](##overview)
-- [Technologies Used](##technologies-used)
-- [Features](##features)
-- [Challenges](##challenges)
-- [Usage](##usage)
-- [Contributing](##contributing)
-- [License](##license)
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Challenges](#challenges)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 
