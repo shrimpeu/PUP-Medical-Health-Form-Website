@@ -33,6 +33,7 @@ List the technologies, frameworks, and tools used in the project. For example:
 - Database:
   - Google Sheets
 - Other tools:
+  - Sublime Text (text editor) 
   - Git, GitHub (for version control)
   - Any other relevant tools
 
