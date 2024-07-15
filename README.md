@@ -4,6 +4,10 @@ This repository contains the final project for our web development course at PUP
 
 You can visit the published website [here](https://shrimpeu.github.io/PUP-Medical-Health-Form-Website/).
 
+## Database
+
+You can access the project database [here](https://docs.google.com/spreadsheets/d/1S2U9CudRQxnTPCndodf_O0Ep4CXSgNCLd-7sQ5LjjtM/edit?usp=sharing).
+
 ## Team Members
 
 - Mark Francis Masadre
@@ -47,10 +51,6 @@ Outline the main features of the website. For example:
 ## Challenges
 
 Discuss any challenges or obstacles faced during the development process. This could include technical issues, design challenges, or project management difficulties.
-
-## Installation
-
-Provide instructions on how to install and set up the project locally. Include any dependencies that need to be installed and steps to configure the environment.
 
 ## Usage
 
