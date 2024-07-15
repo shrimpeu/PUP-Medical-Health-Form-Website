@@ -56,11 +56,19 @@ Discuss any challenges or obstacles faced during the development process. This c
 
 ## Usage
 
-Provide instructions on how to use the website. Include details on how users can navigate through the interface and perform key actions.
-
+1. **Access the Website**: Navigate to the [PUP Medical Health Form Website](https://shrimpeu.github.io/PUP-Medical-Health-Form-Website/).
+2. **Home Page**: The home page provides navigation options.
+3. **How to Use**: Click the "How to Use" button for detailed instructions on how to navigate and use the website.
+4. **Fill Out Form**: Click the "Fill Out Form" button in the navigation menu to proceed to the student information page.
+5. **Submit Information**: The form is divided into three parts:
+   - **PART I. STUDENT INFORMATION**: Enter your personal details such as name, student ID, and contact information.
+   - **PART II. MEDICAL HISTORY**: Provide details about your medical history, including any past illnesses or treatments.
+   - **PART III. PERSONAL HISTORY**: Fill in personal information relevant to your health, such as lifestyle habits and family medical history.
+   - At the end of the form, you will see the statement: "I hereby state to the best of my knowledge, my answers to the above questions are complete and correct."
+6. **Submit Form**: After completing all parts of the form, click the submit button to send your information.
+   
 ## Contributing
 
-Explain how others can contribute to the project. For example:
 - Fork the repository
 - Create a new branch (`git checkout -b feature/awesome-feature`)
 - Commit your changes (`git commit -am 'Add some feature'`)
