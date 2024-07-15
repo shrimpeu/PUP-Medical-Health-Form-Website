@@ -20,7 +20,6 @@ You can access the project database [here](https://docs.google.com/spreadsheets/
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Challenges](#challenges)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
