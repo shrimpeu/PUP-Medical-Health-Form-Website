@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Step Progress</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./javascript/script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <h1>PUP Health Declaration Form</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="steps">
+        <span class="circle active" onclick="goToStep(1)">1</span>
+        <span class="circle" onclick="goToStep(2)">2</span>
+        <span class="circle" onclick="goToStep(3)">3</span>
+        <span class="circle" onclick="goToStep(4)">4</span>
+        <div class="progress-bar">
+            <span class="indicator"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbwO3TznH6iRyUALJz7SkLZT0BmDkS1UfAW9YcgIWyn4XARsCHt5HNsVdVLzPz-_1lZ3/exec">
+            <!-- Step 1: Student Information -->
+            <div class="form-step active" id="step-1">
+                <h2>Student Information</h2>
+                <div class="subgroup">
+                    <div class="personal-info">
+                        <h3>Personal Information</h3>
+                        <hr />
+                        <label for="first-name">First Name:<span style="color: red;">*</span></label>
+                        <input type="text" id="first-name" name="First Name" placeholder="First Name" required>
+
+                        <label for="last-name">Last Name:<span style="color: red;">*</span></label>
+                        <input type="text" id="last-name" name="Last Name" placeholder="Last Name" required>
+
+                        <label for="student-no">PUP Student No.:<span style="color: red;">*</span></label>
+                        <input type="text" id="student-no" name="Student Number" placeholder="Student Number" required>
+
+                        <label for="course-college">Course/College:<span style="color: red;">*</span></label>
+                        <input type="text" id="course-college" name="Course" placeholder="Course/College" required>
+
+                        <label for="blood-type">Blood Type:<span style="color: red;">*</span></label>
+                        <input type="text" id="blood-type" name="Blood Type" placeholder="Blood Type" required>
+
+                        <label for="parents-name">Parent's Name/Guardian/Spouse:<span style="color: red;">*</span></label>
+                        <input type="text" id="parents-name" name="Guardian" placeholder="Parent's Name/Guardian/Spouse" required>
+                    </div>
+
+                    <div class="demographic-info">
+                        <h3>Demographic Information</h3>
+                        <hr />
+                        <label for="age">Age:<span style="color: red;">*</span></label>
+                        <input type="number" id="age" name="Age" placeholder="Age" required>
+
+                        <label for="sex">Sex:<span style="color: red;">*</span></label>
+                        <select id="sex" name="Sex" required>
+                            <option value="" disabled selected>Select Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="civil-status">Civil Status:<span style="color: red;">*</span></label>
+                        <select id="civil-status" name="Civil Status"  required>
+                            <option value="" disabled selected>Select Civil Status</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                        </select>
+
+                        <label for="home-address">Home Address:<span style="color: red;">*</span></label>
+                        <input type="text" id="home-address" name="Home Address" placeholder="Home Address" required>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <hr />
+                    <div class="subgroup">
+                        <div class="input-field">
+                            <label for="email">Email Address:<span style="color: red;">*</span></label>
+                            <input type="email" id="email" name="Email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="cellphone">Cellphone No.:<span style="color: red;">*</span></label>
+                            <input type="tel" id="cellphone" name="Cellphone" placeholder="Cellphone No." required pattern="[0-9]{11}" title="Please enter a valid cellphone number (09xx xxxx xxx 11 digits)">
+                        </div>
+                    </div>
+
+                    <div class="subgroup">
+                        <div class="input-field">
+                            <label for="landline">Landline:</label>
+                            <input type="tel" id="landline" name="landline" placeholder="Landline No." pattern="[0-9]{7,15}" title="Please enter a valid landline number (7 to 15 digits)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Medical History -->
+            <div class="form-step" id="step-2">
+                <h2>Medical History</h2>
+                <div class="medical-history">
+                    <div class="medical-attention">
+                        <label for="medical-attention-question" style="font-weight: bold;">Do you need medical attention or have a known medical illness?<span style="color: red;">*</span></label>
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="medical-attention" value="yes"> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="medical-attention" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <p style="font-size: 15px;">(Please check the following that apply and give more information as needed)</p>
+                    <br>
+                    <div class="checkbox-options">
+                        <label><input type="checkbox" name="illness" value="asthma"> Asthma</label>
+                        <label><input type="checkbox" name="illness" value="loss-of-consciousness"> Loss of Consciousness</label>
+                        <label><input type="checkbox" name="illness" value="eye-disease"> Eye Disease/Defect</label>
+                        <label><input type="checkbox" name="illness" value="accident-injuries"> Accident Injuries</label>
+                        <label><input type="checkbox" name="illness" value="diabetes"> Diabetes</label>
+                        <label><input type="checkbox" name="illness" value="heart-disease"> Heart Disease</label>
+                        <label><input type="checkbox" name="illness" value="kidney-disease"> Kidney Disease</label>
+                        <label><input type="checkbox" name="illness" value="tuberculosis"> Tuberculosis / Primary Complex</label>
+                        <label><input type="checkbox" name="illness" value="convulsion-epilepsy"> Convulsion/Epilepsy</label>
+                        <label><input type="checkbox" name="illness" value="hyperventilation"> Hyperventilation</label>
+                        <label><input type="checkbox" name="illness" value="hemophilia"> Hemophilia</label>
+                        <label><input type="checkbox" name="illness" value="migraine"> Migraine</label>
+                        <label><input type="checkbox" name="illness" value="high-blood-pressure"> High Blood Pressure</label>
+                        <label><input type="checkbox" name="illness" value="others"> Others (Please Indicate):</label>
+                        <div class="other-illness">
+                            <input type="text" id="other-illness-input" name = "Other ilness" placeholder="Specify other illness">
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <br>
+                <br>
+                <div class="additional-info">
+                    <h3>Additional Information for Students with Medical Conditions:</h3>
+                    <div class="food-allergies-container">
+                    <label for="food-allergies">Food:<span style="color: red;">*</span></label>
+                    <input type="text" id="food-allergies" name="Food Allergies" placeholder="Food Allergies">
+                    <div class="no-known-allergies">
+                        <input type="checkbox" id="no-food-allergies" name="No Allergies" value="No Allergies">
+                        <label for="no-food-allergies" name="No Allergies" value="No Allergies">No Known Allergies</label>
+                    </div>
+                    </div>
+
+                    <label>Medicines:</label>
+                    <div class="checkbox-options">
+                        <label><input type="checkbox" name="medicine-allergies" value="aspirin"> Aspirin</label>
+                        <label><input type="checkbox" name="medicine-allergies" value="ibuprofen"> Ibuprofen</label>
+                        <label><input type="checkbox" name="medicine-allergies" value="amoxicillin"> Amoxicillin</label>
+                        <label><input type="checkbox" name="medicine-allergies" value="mefenamic-acid"> Mefenamic Acid</label>
+                        <label><input type="checkbox" name="medicine-allergies" value="penicillin"> Penicillin</label>
+                        <label><input type="checkbox" name="medicine-allergies" value="other-medicine"> Others:</label>
+                        <div class="other-medicine">
+                            <input type="text" id="other-medicine-allergies" name="Other Medecine Allergies" placeholder="Other Medicine Allergies">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Personal History -->
+            <div class="form-step" id="step-3">
+                <h2>Personal History</h2>
+                <div class="personal-history">
+                    <div class="radio-option">
+                        <label id="Cigarette">Cigarette Smoking::<span style="color: red;">*</span></label></label>
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="smoking" value="yes"> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="smoking" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="radio-option">
+                        <label id="Alcohol">Alcohol Drinking::<span style="color: red;">*</span></label></label>
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="alcohol" value="yes"> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="alcohol" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Confirmation -->
+            <div class="form-step" id="step-4">
+                <h2>Confirmation</h2>
+                <p>I hereby state to the best of my knowledge, my answers to the above questions are complete and correct.</p><br>
+                <p>By affixing my signature (Parent/Guardian and Student), I agree to the Data Privacy Act of 2012 and its implementing rules and regulations and voluntarily give my consent in the collection and processing of the student's name above its Personal Information in accordance with such as health assessment, treatment and/or research following research ethics guidelines for the improvements of healthcare services. This consent will remain in full force until I revoke it in writing. I also understand the PUP MSD will not be liable to any untoward incident that may arise due to the temporary deferral of the physical examination and chest x-ray.</p>
+                <br>
+                <div class="checkbox-container">
+                    <label style="display: flex; align-items: center;">
+                        <input type="checkbox" id="agree-terms" name="agree-terms" value="yes"required>
+                        I agree to the terms and conditions.:<span style="color: red;">*</span></label>
+                    </label>
+                </div>
+
+    
+            </div>
+
+        <div class="buttons">
+
+            <button id="prev" type="button">Prev</button>
+            <button id="next" type="button">Next</button>
+            <button id="submit" style="display: none;" type="submit">Submit</button>
+
+
+        </div>
+     </form>
+    </div>
+
+    <div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="popup-message">Submitting...</span>
+    </div>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector('form');
+    const popup = document.getElementById('popup');
+    const popupMessage = document.getElementById('popup-message');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Show the popup with the "Submitting..." message
+        popup.style.display = 'block';
+
+        // Collect form data
+        const formData = new FormData(form);
+
+        // Send form data via AJAX
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+    if (data.result === 'success') {
+        popupMessage.textContent = 'Success!';
+        popupMessage.classList.add('success');
+
+        setTimeout(function() {
+            popup.style.display = 'none';
+            popupMessage.textContent = 'Submitting...';
+            popupMessage.classList.remove('success');
+            window.location.href = 'index.html'; // Redirect to home.html
+        }, 2000);
+    } else {
+        popupMessage.textContent = 'Submission failed. Please try again.';
+        popupMessage.classList.add('error');
+
+        setTimeout(function() {
+            popup.style.display = 'none';
+            popupMessage.textContent = 'Submitting...';
+            popupMessage.classList.remove('error');
+        }, 2000);
+    }
+})
+        .catch(error => {
+            console.error('Error:', error);
+            popupMessage.textContent = 'An error occurred. Please try again.';
+            popupMessage.classList.add('error');
+
+   
+            setTimeout(function() {
+                popup.style.display = 'none';
+                popupMessage.textContent = 'Submitting...';
+                popupMessage.classList.remove('error');
+            }, 2000);
+        });
+    });
+});
+</script>
+
+
+
+
+
+</body>
+</html>
