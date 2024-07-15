@@ -43,11 +43,8 @@ The PUP Medical Health Form Website is an online platform designed to streamline
 
 ## Features
 
-- **User Authentication and Authorization**: Secure login system for students and staff to access the platform.
 - **Medical Form Submission**: Users can fill out and submit medical health forms online.
-- **Admin Dashboard**: Administrators can view and manage submitted health forms, including approving or rejecting submissions.
 - **Responsive Design**: The website is accessible on various devices, including desktops, tablets, and smartphones.
-- **Email Notifications**: Automatic email notifications are sent to users upon form submission and status updates.
   
 ## Challenges
 
