@@ -2,16 +2,18 @@
 
 This repository contains the final project for our web development course at PUP (Polytechnic University of the Philippines). The project is a web application designed to manage medical health forms for PUP.
 
+## Team Members
+
+- Mark Francis Masadre
+- Mark Jeremiah Pabalan
+
+## Published Website
+
 You can visit the published website [here](https://shrimpeu.github.io/PUP-Medical-Health-Form-Website/).
 
 ## Database
 
 You can access the project database [here](https://docs.google.com/spreadsheets/d/1S2U9CudRQxnTPCndodf_O0Ep4CXSgNCLd-7sQ5LjjtM/edit?usp=sharing).
-
-## Team Members
-
-- Mark Francis Masadre
-- Mark Jeremiah Pabalan
 
 ## Table of Contents
 - [Overview](#overview)
