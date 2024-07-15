@@ -52,7 +52,7 @@ List the technologies, frameworks, and tools used in the project. For example:
   
 ## Challenges
 
-Discuss any challenges or obstacles faced during the development process. This could include technical issues, design challenges, or project management difficulties.
+We encountered a challenge with using CSS Flexbox for aligning the contents in the form. It was difficult to achieve the desired layout and spacing among the form elements. Despite following tutorials and examples, we struggled to understand how to properly use properties like `justify-content` and `align-items` to align items effectively.
 
 ## Usage
 
@@ -63,7 +63,7 @@ Discuss any challenges or obstacles faced during the development process. This c
 5. **Submit Information**: The form is divided into three parts:
    - **PART I. STUDENT INFORMATION**: Enter your personal details such as name, student ID, and contact information.
    - **PART II. MEDICAL HISTORY**: Provide details about your medical history, including any past illnesses or treatments.
-   - **PART III. PERSONAL HISTORY**: Fill in personal information relevant to your health, such as lifestyle habits and family medical history.
+   - **PART III. PERSONAL HISTORY**: Fill in personal information relevant to your health, such as lifestyle habits.
    - At the end of the form, you will see the statement: "I hereby state to the best of my knowledge, my answers to the above questions are complete and correct."
 6. **Submit Form**: After completing all parts of the form, click the submit button to send your information.
    
