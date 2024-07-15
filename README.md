@@ -2,7 +2,7 @@
 
 This repository contains the final project for our web development course at PUP (Polytechnic University of the Philippines). The project is a web application designed to manage medical health forms for PUP.
 
-## Team Members
+## Group Members
 
 - Mark Francis Masadre
 - Mark Jeremiah Pabalan
