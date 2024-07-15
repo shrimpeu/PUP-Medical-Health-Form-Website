@@ -30,7 +30,6 @@ The PUP Medical Health Form Website is an online platform designed to streamline
 
 ## Technologies Used
 
-List the technologies, frameworks, and tools used in the project. For example:
 - Frontend:
   - HTML5, CSS3, JavaScript
 - Backend:
