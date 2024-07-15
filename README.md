@@ -28,7 +28,6 @@ Describe briefly what the project is about and its purpose. Mention any key feat
 List the technologies, frameworks, and tools used in the project. For example:
 - Frontend:
   - HTML5, CSS3, JavaScript
-  - Bootstrap (optional)
 - Backend:
   - AppScript
 - Database:
